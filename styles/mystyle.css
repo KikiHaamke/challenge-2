@@ -1,21 +1,47 @@
 body {
-    background: black;
+    background: #15162c;
     color: #fff;
     font-family: "Arial Black", sans-serif;
     display: flex;
     justify-content: center;
 }
-.body.night {
-
+h2 {
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 10px;
+    /*margin: auto;*/
+    /*display: inline-block;*/
+    /*vertical-align: middle;*/
 }
-.body.morning {
 
+h3 {
+    text-align: center;
+    /*margin: auto;*/
+    /*display: inline-block;*/
+    /*vertical-align: middle;*/
 }
-.body.day {
-
+.item3 {
+    display: flex;
 }
-.body.evening {
+#graphic {
+    margin-top: 20px;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 
+#graphic.night {
+    background-image: url("../images/night.png");
+}
+#graphic.morning {
+    background-image: url("../images/morning.jpg");
+}
+#graphic.day {
+    background-image: url("../images/day.png");
+}
+#graphic.evening {
+    background-image: url("../images/evening.png");
 }
 
 #message {
@@ -29,4 +55,10 @@ body {
 }
 .logo {
     height: 24px;
+}
+
+@media (min-width: 576px) {
+    h2 {
+        font-size: 2.4vw;
+    }
 }
