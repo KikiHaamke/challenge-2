@@ -7,6 +7,8 @@ function showTime(){
     var UTCHours = date.getUTCHours();
     setDayPart(UTCHours);
 
+    document.getElementById('date').innerText = date.toLocaleDateString();
+
     document.getElementById("GMT").innerText = date.toLocaleTimeString('en-EN', {timeZone: 'Europe/London'});
     document.getElementById("EST").innerText = date.toLocaleTimeString('en-EN', {timeZone: 'America/New_York'});
     document.getElementById("PDT").innerText = date.toLocaleTimeString('en-EN', {timeZone: 'America/Los_Angeles'});

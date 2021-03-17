@@ -39,6 +39,14 @@
     'est pdt'
     'jst hst';
     }
+    h2 {
+        font-size: 2.4vw;
+        /*margin-top: 20px;*/
+    }
+    .item3 h3 {
+        font-size: 60px;
+    }
+
 }
 @media (min-width: 768px)  {
     .grid-container {
@@ -48,11 +56,21 @@
     'gmt gmt gmt text'
     'est pdt jst hst';
     }
+    #message {
+        font-size: 25px;
+    }
+
 }
 
 @media (min-width: 992px)  {
     .grid-container {
         width: 920px;
+    }
+    .item3 h3 {
+        font-size: 70px;
+    }
+    #message {
+        font-size: 30px;
     }
 }
 @media (min-width: 1200px) {
@@ -62,6 +80,10 @@
     'header header header header'
     'gmt gmt gmt text'
     'est pdt jst hst';
+    }
+    #message {
+        font-size: 30px;
+        padding-top: 20px;
     }
 }
 /*@media (min-width: 1400px)  {*/
