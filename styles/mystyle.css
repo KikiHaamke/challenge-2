@@ -53,9 +53,64 @@ h4 {
     background-image: url("../images/evening.png");
 }
 
-.item2 #message {
-    color: white;
-    /*text-align: center;*/
+.item2 {
+    padding: 0 !important;
+}
+
+#animation-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 100px;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+#animation-wrapper.morning {
+    background-color: rgb(77, 167, 243);
+}
+#animation-wrapper.day {
+    background-color: cornflowerblue;
+}
+#animation-wrapper.evening {
+    background-color: rgb(95, 65, 207);
+}
+#animation-wrapper.night {
+    /*background-color: none;*/
+}
+#sun-moon {
+    width: 25%;
+    border-radius: 50%;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    z-index: 0;
+    animation: 5s rise;
+}
+#sun-moon:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+#animation-wrapper.morning #sun-moon {
+    background-color: rgb(232, 126, 78);
+}
+#animation-wrapper.day #sun-moon {
+    background-color: yellow;
+}
+#animation-wrapper.evening #sun-moon {
+    background-color: rgb(221, 240, 246);
+}
+#animation-wrapper.night #sun-moon {
+    background-color: white;
+}
+@keyframes rise {
+    0% {
+        top: 100%;
+    }
+    100% {
+        top: 10%;
+    }
 }
 
 .flex {
