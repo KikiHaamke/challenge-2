@@ -5,6 +5,9 @@ body {
     display: flex;
     justify-content: center;
 }
+h1 {
+    font-size: 20px;
+}
 h2 {
     font-size: 20px;
     /*text-align: center;*/
@@ -61,7 +64,24 @@ h4 {
     align-items: center;
 }
 .logo {
-    height: 24px;
+    height: 18px;
+}
+
+@media (min-width: 576px)  {
+    h1 {
+        font-size: 30px;
+    }
+    h2 {
+        font-size: 2.4vw;
+        /*margin-top: 20px;*/
+    }
+    .item3 h3 {
+        font-size: 60px;
+    }
+    .logo {
+        height: 24px;
+    }
+
 }
 
 /*@media (min-width: 576px) {*/
